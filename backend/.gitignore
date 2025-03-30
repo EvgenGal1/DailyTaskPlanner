@@ -1,4 +1,4 @@
-# ^ frontend
+# ^ backend
 
 # dependencies
 **/node_modules
@@ -9,8 +9,8 @@ dist
 dist-ssr
 
 # compiled output
-/out/
-
+dist/
+# dtos/
 # production
 /build
 
@@ -45,20 +45,26 @@ lerna-debug.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
 
 # IDE - VSCode
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 
 # Editor directories and files
-.idea
+/.idea
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
 # ^ СВОЁ
 # п.врем./не нужных ф./доп.код
@@ -75,8 +81,8 @@ webpack*
 
 # ^ общ.врем.ИСКЛЮЧЁННЫЕ
 # папки 
-!/**/src/configs/auth/
+!/**/src/common/decorators/
 # все.ф.в п. 
 # !/**/src/common/decorators/**
 # ф.
-!/**/src/configs/auth/auth.ts
+!/**/src/config/database/db_localhost.config.ts
