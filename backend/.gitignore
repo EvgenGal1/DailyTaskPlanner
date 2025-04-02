@@ -1,5 +1,8 @@
 # ^ backend
 
+# development
+__pycache__/
+
 # dependencies
 **/node_modules
 /.pnp
