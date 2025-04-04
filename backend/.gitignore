@@ -2,6 +2,8 @@
 
 # development
 __pycache__/
+*.pyc
+versions/
 
 # dependencies
 **/node_modules
