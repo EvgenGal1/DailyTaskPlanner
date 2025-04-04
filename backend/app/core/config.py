@@ -8,10 +8,11 @@ class Settings(BaseSettings):
     REDIS_URL: str
     ALGORITHM: str
     ACCESS_TOKEN_EXPIRE_MINUTES: int
+    CLT_URL: str
     
     class Config:
-        # опред.среду ч/з перем. ENV
-        env_file = f".env.{os.getenv('ENV', 'dev')}"
+        # опред.среду ч/з перем. ENVIRONMENT
+        env_file = f".env.{os.getenv('ENVIRONMENT', 'dev')}"
         env_file_encoding = 'utf-8'
 
 settings = Settings()
