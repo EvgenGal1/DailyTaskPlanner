@@ -29,6 +29,11 @@ psycopg2-binary = "^2.9.10"
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.2.2"
 
+[tool.poetry.scripts]
+start-dev = "app.run_dev:main"
+migrate-gen = "app.scripts.migrate_gen:main"
+migrate-up = "app.scripts.migrate_up:main"
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
