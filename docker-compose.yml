@@ -1,6 +1,6 @@
 services:
   backend:
-    container_name: pyback
+    container_name: py_back
     build:
       context: ./backend
       dockerfile: Dockerfile
