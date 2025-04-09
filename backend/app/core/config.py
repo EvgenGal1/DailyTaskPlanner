@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     ALGORITHM: str
     ACCESS_TOKEN_EXPIRE_MINUTES: int
     CLT_URL: str
-    ENVIRONMENT: str = os.getenv("ENVIRONMENT", "dev")
+    ENVIRONMENT: str = "dev"
     
     class Config:
         # опред.среду ч/з перем. ENVIRONMENT
