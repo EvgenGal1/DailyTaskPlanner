@@ -25,6 +25,7 @@ redis = "^5.2.1"
 websockets = "^15.0.1"
 pydantic-settings = "^2.8.1"
 psycopg2-binary = "^2.9.10"
+httpx = "^0.28.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.2.2"
