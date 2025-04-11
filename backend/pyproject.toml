@@ -31,9 +31,9 @@ httpx = "^0.28.1"
 pytest = "^8.2.2"
 
 [tool.poetry.scripts]
-start-dev = "app.run_dev:main"
-migrate-gen = "app.scripts.migrate_gen:main"
-migrate-up = "app.scripts.migrate_up:main"
+start-dev = "app.scripts.cmd.run_dev:main"
+migrate-gen = "app.scripts.cmd.migrate_gen:main"
+migrate-up = "app.scripts.cmd.migrate_up:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
